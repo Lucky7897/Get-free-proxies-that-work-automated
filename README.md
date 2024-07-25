@@ -21,4 +21,5 @@ This Proxy Manager Script allows you to fetch and validate proxies from various 
 2. Ensure you have Python installed (version 3.6 or higher).
 3. Install the required Python packages using `pip`:
 
-   
+   ```sh
+   pip install -r requirements.txt
