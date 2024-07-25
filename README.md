@@ -1,25 +1,40 @@
-# Proxy Manager Script
+# Proxy Manager
 
-## Overview
-
-This Proxy Manager Script allows you to fetch and validate proxies from various URLs. It supports three modes: Fast, Normal, and Extensive Proxy Gathering. The script can also run in a loop with specified intervals, and it has a debug mode that provides detailed output about invalid URLs and proxy statistics.
+This script manages proxies by fetching them from specified URLs, validating them, and periodically updating the list of working proxies.
 
 ## Features
+- Fetch proxies from a list of URLs
+- Validate proxies and filter out non-working ones
+- Support for different types of proxies: HTTP, SOCKS4, SOCKS5
+- Fast mode for quick proxy validation
+- Debug mode for detailed logging
+- Scheduled fetching and validation
 
-- **Mode Selection**: Choose between Fast, Normal, and Extensive Proxy Gathering modes.
-- **Fast Mode**: Fetch proxies from 5 URLs and find 50 working proxies.
-- **Normal Mode**: Fetch proxies from 25 URLs.
-- **Extensive Mode**: Fetch proxies from the entire list in `proxy.txt`.
-- **Debug Mode**: Provides detailed output about invalid URLs and proxy statistics.
-- **Output Formatting**: Ensures `IP:PORT` format and displays proxies with ping below 250 ms.
-- **Loop Execution**: Option to run the script in a loop with user-defined intervals.
-- **Automatic Execution**: Continues without freezing or requiring additional input.
+## Setup
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/Lucky7897/Proxy-manager-
+    cd Proxy-manager-
+    ```
+2. Install required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+3. Run the script:
+    ```sh
+    python script.py
+    ```
 
-## Installation
+## Configuration
+- `proxy.txt`: Add the URLs to fetch proxies from.
+- `socks4_proxies.txt`: This file will store the fetched proxies.
+- `invalid_urls.txt`: This file will store URLs that failed to fetch proxies.
+- `proxy_stats.txt`: This file will store statistics about the fetched proxies.
 
-1. Clone the repository or download the script files.
-2. Ensure you have Python installed (version 3.6 or higher).
-3. Install the required Python packages using `pip`:
+## Usage
+When running the script, you will be prompted to choose the type of proxies, mode, and whether to run in a loop.
 
-   ```sh
-   pip install -r requirements.txt
+## Author
+- Lucky7897
+
+[GitHub Repository](https://github.com/Lucky7897/Proxy-manager-)
