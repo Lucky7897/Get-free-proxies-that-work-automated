@@ -13,8 +13,7 @@ This script manages proxies by fetching them from specified URLs, validating the
 ## Setup
 1. Clone the repository:
     ```sh
-    git clone https://github.com/Lucky7897/Proxy-manager-
-    cd Proxy-manager-
+    git clone https://github.com/Lucky7897/Get-free-proxies-that-work-automated.git
     ```
 2. Install required dependencies:
     ```sh
